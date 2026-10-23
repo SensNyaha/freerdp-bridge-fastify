@@ -1,0 +1,32 @@
+{
+  "name": "freerdp-bridge-fastify-delivery",
+  "version": "0.2.4",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "package"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @freerdp-bridge/fastify",
+    "check:types": "tsc -p tests/tsconfig.json",
+    "test": "node tests/consumer.mjs --package-runtime"
+  },
+  "dependencies": {
+    "@freerdp-bridge/fastify": "file:./package"
+  },
+  "devDependencies": {
+    "fastify": "5.12.5",
+    "@freerdp-bridge/protocol": "0.2.4",
+    "ws": "8.22.0",
+    "typescript": "5.9.3",
+    "@types/node": "24.10.0"
+  },
+  "optionalDependencies": {
+    "@freerdp-bridge/runtime-win32-x64": "0.2.4",
+    "@freerdp-bridge/runtime-linux-x64-gnu": "0.2.4"
+  }
+}
