@@ -1,6 +1,6 @@
 {
   "name": "@freerdp-bridge/fastify",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -22,7 +22,7 @@
     }
   },
   "dependencies": {
-    "@freerdp-bridge/api": "0.2.4"
+    "@freerdp-bridge/api": "0.2.5"
   },
   "peerDependencies": {
     "fastify": "^5.12.5"

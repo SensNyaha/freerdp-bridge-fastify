@@ -1,11 +1,11 @@
 # Native runtime в npm-проекте
 
 Native runtime принят вместе с Fastify **0.2.1**: все product manifests и
-нативные бинарники согласованы на 0.2.1. [Финальная приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.4/docs/ITERATION_424.md).
+нативные бинарники согласованы на 0.2.1. [Финальная приёмка](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_424.md).
 Все семь пакетов опубликованы; integrity и новые registry-only проекты на
-Windows/Linux проверены в [426](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.4/docs/ITERATION_426.md).
+Windows/Linux проверены в [426](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_426.md).
 Более ранние development-комплекты 0.2.0, их проверки и ограничения сохраняются
-в [итерации 420](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.4/docs/ITERATION_420.md) и [итерации 421](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.4/docs/ITERATION_421.md);
+в [итерации 420](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_420.md) и [итерации 421](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/ITERATION_421.md);
 они не переименовываются в релизные архивы 0.2.1.
 
 ## Установка в приложении
@@ -152,7 +152,7 @@ refusal. Успех fake media transport не заменяет browser decode/re
 
 Собственный bridge-код имеет MIT. Полный native пакет содержит зависимости с
 их отдельными условиями. Читайте `THIRD_PARTY_NOTICES.md`, `runtime/share/`
-licenses, port metadata и [SBOM](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.4/docs/SBOM.md). MIT не перелицензирует FreeRDP,
+licenses, port metadata и [SBOM](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.2.5/docs/SBOM.md). MIT не перелицензирует FreeRDP,
 libusb, codecs или Microsoft runtime. Этот инвентарь не заменяет provenance,
 подписи, upstream license review и требования конкретного deployment.
 LGPL-исходники и патчи сопровождают бинарники в том же npm-архиве; читайте
