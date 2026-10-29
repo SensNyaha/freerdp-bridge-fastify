@@ -1,21 +1,21 @@
 {
   "schema": 1,
   "kind": "fastify",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "repository": "SensNyaha/freerdp-bridge-fastify",
   "upstream": {
-    "tag": "v0.5.0",
-    "commit": "cec3b8e00da849dd524ce55917f76f39fcfe537c",
-    "acceptance": "docs/RELEASE_0_5_0.md"
+    "tag": "v0.6.0",
+    "commit": "98b8f46a83c54158973e67d4203431862310bfe9",
+    "acceptance": "docs/RELEASE_0_6_0.md"
   },
   "packages": [
     {
       "name": "@freerdp-bridge/fastify",
-      "version": "0.5.0",
-      "archive": "freerdp-bridge-fastify-0.5.0.tgz",
-      "bytes": 4433,
-      "sha256": "ae1445d68c9ce37710978c250185f88ff9bc4337d4cbb3b39d2b787d809943bf",
-      "integrity": "sha512-KZCFaBgdj8p7SiB1u0dAcfUictjV3psxAvEolAmZ9+2/x/M0ohMlRjetgzEZISWjB7bal6hTRznNhRPM9jwAbA=="
+      "version": "0.6.0",
+      "archive": "freerdp-bridge-fastify-0.6.0.tgz",
+      "bytes": 4656,
+      "sha256": "da4bd237b935403a65d4472b4dc24119242e51d8dca5d51279db6535b6c3f386",
+      "integrity": "sha512-BJQWQJ/RPabeef4AvQzGnN0KZlT5YFkao04A3AMLfpxxxkPEb4y0lFQ6IfIISyMFORKhsj0a6hIykLfxj8d4Ow=="
     }
   ],
   "sources": [
@@ -37,7 +37,7 @@
     {
       "path": "DELIVERY.md",
       "bytes": 1048,
-      "sha256": "b6ddea10cbcf17db5de2c55b0213d72cf48f47fefd0c7ce3f1863eb1debf0d8a"
+      "sha256": "c0756098ba0c1a8f63dedc3b1951b2b4cd5719cc3f2aabb6f8a415cd099ff98a"
     },
     {
       "path": "LICENSE",
@@ -47,62 +47,62 @@
     {
       "path": "README.md",
       "bytes": 1529,
-      "sha256": "4b0569a3980d93c3fbb1073e7845ce6a29389a82ecfc7ac5d386d55335235c40"
+      "sha256": "91c1f8d2be0679e2a48b05dfe0f46c279d8d3a33ab3f8707407db66c243125ef"
     },
     {
       "path": "docs/FASTIFY_PLUGIN.md",
       "bytes": 9087,
-      "sha256": "b7421689121b15364a98dadfa0a8d659805139f72ef0c51a23c18d3e07b5d86b"
+      "sha256": "32a8bec39df81c930d9042b74552a49fac36283fd0dbc4f0ba6e83997b8601e1"
     },
     {
       "path": "docs/FASTIFY_USAGE.md",
-      "bytes": 20809,
-      "sha256": "7dd899cedda5be93650ecee58592f708a0d91d498f8e95bdc06e3ac73273fc37"
+      "bytes": 21211,
+      "sha256": "95d756959084c4d6083d65fff4396a895c2c2dadf71a36c394f300141a3ced2e"
     },
     {
       "path": "docs/FRAMEWORK_SELECTION.md",
       "bytes": 5823,
-      "sha256": "e5e6e84d7be16c7b523f11110b945f7a344e4cdc64b269c56c880ad5be7ee57b"
+      "sha256": "5837c6290f8016a208fd6d5b96f44f5729cf65ac0e9baf6cea5c8061049501c5"
     },
     {
       "path": "docs/HOST_AUTHENTICATION.md",
       "bytes": 6326,
-      "sha256": "7c3d530f1eda412d4958bcb063600b513f0446be1be4db6886178b405134b505"
+      "sha256": "3b1ac4dcbc7ef4da45166e69bf2b092bec6cb33100fc6db8dbce8c702fbd7377"
     },
     {
       "path": "docs/ITERATION_438.md",
       "bytes": 7173,
-      "sha256": "9dab9c0b01f0f156f731d2828a77cb82f5fb7a2e18ac451d040e12e4cbb6a67c"
+      "sha256": "872eea5a34c858df212f95f8c1c5c35d3268b1e7f6856d8ad3943943948bd2f3"
     },
     {
       "path": "docs/NATIVE_NPM_RUNTIME.md",
-      "bytes": 13603,
-      "sha256": "ec6ea6c44364cedc8b0090886067abfea4b9d5302eda3c31935783784b6eded1"
+      "bytes": 13595,
+      "sha256": "bc560d22edfb855d4854add07f8c9c75b2991185fa0002386fe323c0b5ce1480"
     },
     {
       "path": "docs/NPM_PUBLISHING.md",
-      "bytes": 21722,
-      "sha256": "e7894c2bd37946ca21d867da523fcfc3ded04d9c3e855655af3c949947cfdfd5"
+      "bytes": 21714,
+      "sha256": "925813e6cf1089757e57528d89cf591d793f7c9b0d31a1fe45a7c6420b4b39bc"
     },
     {
       "path": "docs/NPM_TRUSTED_PUBLISHING.md",
-      "bytes": 10867,
-      "sha256": "47b686aa4f6724d7e5a4380b9d10d8b89a620114cb36cb1cda1c029070f37bdc"
+      "bytes": 10859,
+      "sha256": "cdb1b490a6003aa1c9c9a0e90cd97a8c29abdbccf321e80542562b13b735307b"
     },
     {
       "path": "docs/RUNTIME_RECOVERY.md",
-      "bytes": 49122,
-      "sha256": "d94d8cd69251adbaec846a84c78de054275e3c833f335582196adc80c29c1107"
+      "bytes": 58265,
+      "sha256": "ca8fe30eebbfe24bf3e373d9022a133403154ce4aaf51bb26287356244de4bbe"
     },
     {
       "path": "package-lock.json",
       "bytes": 30740,
-      "sha256": "44e85162d9e80471d04d7171e0d47def66d0f710b5326e3d23f680a0ca590c14"
+      "sha256": "d527fe530ce4e3f328d0d5c17fb5cfb6a4ee98236d0d3b8ae6e2d2079eddf4d1"
     },
     {
       "path": "package.json",
       "bytes": 779,
-      "sha256": "aceded17c14ce8be54f0539afdb66dea4d6822c8d92eb3c5cd1b6a1efffc10b2"
+      "sha256": "c5a18924aa213f213d8134afdfe2d09f21263fd6a623ffc748d5a894dba97af0"
     },
     {
       "path": "package/LICENSE",
@@ -111,13 +111,13 @@
     },
     {
       "path": "package/README.md",
-      "bytes": 6172,
-      "sha256": "3f1b0325c84cc1cdee3432f6c358c455e83aafe1c5c8485de7eac402e8f15a9d"
+      "bytes": 6659,
+      "sha256": "18e8669549f0b5d35db4ee5bed61a0d8d7ddcf00e31f2767f99c3d1eeb4f70ca"
     },
     {
       "path": "package/package.json",
       "bytes": 683,
-      "sha256": "57d936702a0dbf90a52c3ee007a296c33114c03687051623e33af677a4097db6"
+      "sha256": "e36f5daba9584b86503d29d649496fe3c33da1d0d505d087dec792c4230babe7"
     },
     {
       "path": "package/src/browser.ts",

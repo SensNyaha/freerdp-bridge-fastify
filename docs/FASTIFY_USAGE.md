@@ -2,13 +2,13 @@
 
 В 0.5.0 доступен отдельно включаемый буфер изображений. Именованные PNG-профили,
 явные действия браузера, общие лимиты и ограничения описаны в
-[image clipboard](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/CLIPBOARD_BROWSER.md#versioned-050-image-application-acceptance).
+[image clipboard](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/CLIPBOARD_BROWSER.md#versioned-050-image-application-acceptance).
 
 Этот документ описывает Fastify-реализацию релиза **0.2.1**, принятую через
 отдельные `feature/fastify-0.2.1` и `release/0.2.1`. Стабильная 0.2.0 не
 содержит этого plugin. JS/native-артефакты имеют согласованную версию 0.2.1;
-[release-проверки](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/ITERATION_424.md) и
-[подтверждённая публикация всего набора в npm](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/history/iterations/401-450.md#iteration-426). Пользователь
+[release-проверки](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/ITERATION_424.md) и
+[подтверждённая публикация всего набора в npm](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/history/iterations/401-450.md#iteration-426). Пользователь
 создал npm-организацию `freerdp-bridge` и подтвердил имена `@freerdp-bridge/*`.
 
 ## Что запускается в приложении
@@ -23,13 +23,13 @@
 Plugin владеет сессиями, одноразовыми attach tokens и своим shutdown.
 Поддерживаемые возможности определяются `/rdp/v1/capabilities` и native build,
 а не фактом установки JavaScript-пакета. Полная исходная V1-программа остаётся
-в [TODO](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/TODO.md); интеграция не включает незавершённые устройства/диски.
+в [TODO](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/TODO.md); интеграция не включает незавершённые устройства/диски.
 
 ## Установка и native runtime
 
 Текущий согласованный набор **0.5.0** полностью опубликован в npm. Чистые
 Windows/Linux consumers проходят strict TypeScript, HTTP/WS, assets и native
-TLS/lifecycle. [Публикация](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/RELEASE_0_5_0.md#public-delivery). Установка:
+TLS/lifecycle. [Публикация](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/RELEASE_0_5_0.md#public-delivery). Установка:
 
 ```sh
 npm install fastify@5.12.5 @freerdp-bridge/fastify@0.5.0
@@ -59,7 +59,7 @@ GCC 8.3 — baseline сборки Linux-комплекта, а не обязат
 Данный набор предназначен для Windows x64 и Linux x64 с glibc; произвольные
 дистрибутивы, macOS, ARM и musl этим утверждением не принимаются. Результаты
 compiler/foundation, runtime и конкретных платформ фиксируются отдельно в
-[COMPILER_SUPPORT](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/COMPILER_SUPPORT.md) и отчётах о приёмке.
+[COMPILER_SUPPORT](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/COMPILER_SUPPORT.md) и отчётах о приёмке.
 
 На удалённой машине, к которой подключаются по RDP, GCC и FreeRDP для этого
 подключения также не требуются: там нужен настроенный RDP-сервер, например
@@ -70,7 +70,7 @@ XRDP. Это отдельная роль от хоста Node.js/Fastify.
 получить архивы всех workspace dependencies той же product version:
 `protocol`, `config`, `node`, `api`, `fastify`. Установка одного development
 tarball не делает остальные пакеты доступными в registry. Воспроизводимый
-проверяющий helper — [test-fastify-package.mjs](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/scripts/test-fastify-package.mjs):
+проверяющий helper — [test-fastify-package.mjs](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/scripts/test-fastify-package.mjs):
 он создаёт отдельный проект в `build/fastify-consumer-*`, устанавливает архивы,
 проверяет строгие TypeScript declarations, same-port HTTP/WS, browser assets
 и настоящий native TLS-отказ. Флаг `--npm` проверяет именно npm; без флага
@@ -100,7 +100,7 @@ Native npm-комплекты и resolver приняты и опубликова
 устанавливается явно рядом с adapter, затем `resolveNativeRuntime` выбирает
 и проверяет установленный комплект. Version-stamped архивы 0.2.1 собраны;
 финальная release-приёмка пройдена. Публичная доступность и обычная установка
-из npm на Windows/Linux подтверждены в [отчёте о публикации](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/history/iterations/401-450.md#iteration-426).
+из npm на Windows/Linux подтверждены в [отчёте о публикации](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/history/iterations/401-450.md#iteration-426).
 Рабочий runtime root должен быть частным и доступным учётной записи сервиса;
 не помещайте его внутрь публичной static-директории.
 
@@ -142,8 +142,8 @@ bearer/mTLS identity выполняет приложение; наличие л�
 CSRF/Origin identity adapter.
 
 Настройте production ограничения через `sessions` согласно
-[типам SessionManagerOptions](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/packages/node-bridge/src/session-manager.ts)
-и [SECURITY](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/SECURITY.md). Не подменяйте `sessions.workerFactory` fake-worker:
+[типам SessionManagerOptions](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/packages/node-bridge/src/session-manager.ts)
+и [SECURITY](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/SECURITY.md). Не подменяйте `sessions.workerFactory` fake-worker:
 по умолчанию plugin создаёт настоящий `NativeSessionWorker`.
 
 Префикс обязателен: до 128 ASCII символов, до 16 компонентов из букв, цифр,
@@ -158,7 +158,7 @@ Plugin не вызывает `listen()`: запускайте существую
 ## Сессия и browser client
 
 Авторизованный клиент создаёт сессию через `POST /rdp/v1/sessions`, передавая
-структурированный запрос из [PROTOCOL](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/PROTOCOL.md). RDP-учётные данные
+структурированный запрос из [PROTOCOL](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/PROTOCOL.md). RDP-учётные данные
 передаются только в HTTPS body и дальше в приватном IPC. Не помещайте их в
 URL, environment, disk profile, localStorage или журналы. Схема строгая:
 неизвестные поля/строковый port не исправляются автоматически, body больше
@@ -173,7 +173,7 @@ Origin и прежний subprotocol `freerdp-bridge-v1`. Токены одно�
 интерактивный `prompt`, решение принимает пользователь по фактическому
 fingerprint, без общего отключения проверки сертификатов.
 
-Для собственного UI используйте [reference harness](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/apps/reference-harness)
+Для собственного UI используйте [reference harness](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/apps/reference-harness)
 как пример lifecycle, binary media credit, input, certificate и browser
 permissions. Пакет `@freerdp-bridge/fastify/browser` экспортирует
 `referenceBrowserDirectory` с HTML/JS reference client. Раздайте эти файлы
@@ -245,7 +245,7 @@ app.server.on('upgrade', (request, socket, head) => {
 сессии control-channel принимает `session.diagnostics.request` с пустым `data`
 и возвращает `session.diagnostics`; корреляция выполняется по `requestSeq`.
 Проверяйте `sessionDiagnostics: 1` в capabilities. Поля и общие rate/size limits
-описаны в [PROTOCOL](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/PROTOCOL.md). Это текущий lifecycle/buffer snapshot,
+описаны в [PROTOCOL](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/PROTOCOL.md). Это текущий lifecycle/buffer snapshot,
 не полный performance report и не remote desktop contents.
 
 Автоматические request logs bridge scope отключены, включая его 404, а
@@ -273,5 +273,5 @@ product; не выбирайте старый worker как fallback. При 401
 при 403 — Origin и ownership, при 413 — размер body, при 503 — состояние
 mount/worker и лимиты. Не печатайте исходный запрос для диагностики отказа.
 
-Текущие результаты и незакрытые gates: [итерация 419](https://github.com/SensNyaha/freerdp-browser-bridge/blob/1494dc8d8748c55169181f735d9b7d693ee9ba57/docs/history/iterations/401-450.md#iteration-419).
+Текущие результаты и незакрытые gates: [итерация 419](https://github.com/SensNyaha/freerdp-browser-bridge/blob/v0.6.0/docs/history/iterations/401-450.md#iteration-419).
 Типизация Fastify: [официальное руководство](https://fastify.dev/docs/latest/Reference/TypeScript/).
