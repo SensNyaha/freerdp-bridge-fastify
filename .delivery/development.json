@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "kind": "post-release-documentation",
+  "productVersion": "0.7.0",
+  "stableTag": "v0.7.0",
+  "stableCommit": "60cabb9de1c1be31de6588eceb53706284c2a479",
+  "upstreamDocumentationCommit": "4b994479e6c6344c43e4d2e169dca9d0a80358ff",
+  "coreDocumentationCommit": "df1de43da3ecd16293b94330fb7b3ff058d99c07",
+  "immutableReleaseUnchanged": true,
+  "documents": [
+    {
+      "path": "docs/FASTIFY_USAGE.md",
+      "bytes": 22308,
+      "sha256": "6acb7b1b1fa95189d79a0b8f3d9681850892ecd5f4c50f83f6bedfae7f975253"
+    },
+    {
+      "path": "docs/NATIVE_NPM_RUNTIME.md",
+      "bytes": 13799,
+      "sha256": "0de8f3bfc011443f5433f22ab99533ae2b803d89eb0e004b4dcffec168334bde"
+    },
+    {
+      "path": "docs/NPM_PUBLISHING.md",
+      "bytes": 22156,
+      "sha256": "10b1b4a7de8f7c09d39515dad4c8ce1683ff44806e3aaf8a17d00b8eced5f8a3"
+    },
+    {
+      "path": "docs/NPM_TRUSTED_PUBLISHING.md",
+      "bytes": 10995,
+      "sha256": "e2436608755df74549a1327e44188894cd367d7b96e239ed5dc7cde6dcf32f47"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1883,
+      "sha256": "9d623666b47ae3ed2333265b50902d3a106dc3fd6c96483f6f75ba1a9e5fea4a"
+    }
+  ]
+}
